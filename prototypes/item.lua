@@ -9,7 +9,7 @@ item.icons = {
     },
     {
         icon = item.icon,
-        tint = {r=0, g=100./255, b=1, a=0.3}
+        tint = {r=0, g=100/255, b=1, a=0.3}
     },
 }
 data:extend{item}

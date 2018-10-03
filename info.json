@@ -1,11 +1,11 @@
 {
     "name": "GlobalConstantCombinator",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "title": "Global Constant Combinator",
     "author": "aaaaaaaaaaaaaaaaaa8",
     "contact": "",
     "homepage": "",
-    "factorio_version": "0.15",
+    "factorio_version": "0.16",
     "dependencies": ["base >= 0.15"],
     "description": "Output the same constant circuit network signal for all Global constant combinator entity. To set the signal, copy a constant combinator entity and press CONTROL + SHIFT + left mouse button."
 }
