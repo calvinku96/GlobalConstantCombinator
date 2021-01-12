@@ -1,0 +1,7 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 12. 01. 2021
+  General:
+    - Update for 1.1
+  Bug fix:
+    - Fix not being able to copy to the combinator because the source had 2 more signal slots

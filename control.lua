@@ -5,7 +5,7 @@ local function sync_all()
     if params ~= nil then
         for k1, surface in pairs(game.surfaces) do
             for k2, entity in pairs(surface.find_entities_filtered{name="global-constant-combinator"}) do
-                entity.get_control_behavior().parameters = {parameters = params}
+                entity.get_control_behavior().parameters = params
             end
         end
     end
@@ -26,7 +26,7 @@ script.on_event(
             local control_behavior = entity.get_control_behavior()
             local params = global["global-constant-combinator-params"]
             if params ~= nil then
-                control_behavior.parameters = {parameters = params}
+                control_behavior.parameters = params
             end
         end
     end
@@ -37,8 +37,7 @@ script.on_event(
     function (event)
         local entity = game.players[event.player_index].entity_copy_source
         if entity ~= nil and entity.name == "constant-combinator" then
-            local params = entity.get_control_behavior().parameters["parameters"]
-            global["global-constant-combinator-params"] = params
+            global["global-constant-combinator-params"] = entity.get_control_behavior().parameters
             sync_all()
         end
     end

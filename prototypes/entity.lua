@@ -4,7 +4,7 @@ local constant_combinator = data.raw["constant-combinator"]
 local entity = table.deepcopy(constant_combinator["constant-combinator"])
 entity.name = "global-constant-combinator"
 entity.minable.result = "global-constant-combinator"
-entity.item_slot_count = 18
+entity.item_slot_count = 20
 local tint = {r=100/255, g=200/255, b=1, a=1}
 
 local sides = {"north", "east", "south", "west"}
